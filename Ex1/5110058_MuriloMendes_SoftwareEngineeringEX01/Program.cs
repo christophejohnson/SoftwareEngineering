@@ -10,8 +10,8 @@
         Member m1 = new Member("Murilo", 19, "Standard");
         Member m2 = new Member("Andrew", 42, "VIP");
         Member m3 = new Member("Stephen", 42, "Premium");
-        
-        
+
+
 
 
         // TODO: Call BorrowBook() multiple times for each member
@@ -19,6 +19,7 @@
         // - Test borrowing to the maximum allowed for each membership level
         // - Ensure the message prints when the limit is reached
         // - Demonstrates instance vs static data and conditional logic
+        // ----------------------------- //
         m1.BorrowBook();
         m1.BorrowBook();
         m1.BorrowBook();
@@ -35,7 +36,6 @@
         m2.BorrowBook();
         m2.BorrowBook();
         m2.BorrowBook();
-       
         // ----------------------------- //
         m3.BorrowBook();
         m3.BorrowBook();
@@ -43,11 +43,11 @@
         m3.BorrowBook();
         m3.BorrowBook();
         m3.BorrowBook();
-        
+
         // -- Adding spaces to make it simpler to read --
         Console.WriteLine("");
-      
-       
+
+
 
         // TODO: Print out each member's name, age, membership level, and books borrowed
         // Instructions:
@@ -56,7 +56,7 @@
         Console.WriteLine($"Name: {m1.Name}, Age: {m1.Age}, Level: {m1.MembershipLevel}, {m1.GetBooksBorrowed()} ");
         Console.WriteLine($"Name: {m3.Name} , Age: {m3.Age}, Level: {m3.MembershipLevel},  {m3.GetBooksBorrowed()} ");
         Console.WriteLine($"Name: {m2.Name}, Age: {m2.Age}, Level: {m2.MembershipLevel},  {m2.GetBooksBorrowed()} ");
-        
+
         // -- Adding spaces to make it simpler to read --
         Console.WriteLine("");
 
@@ -67,7 +67,7 @@
         // - Demonstrates reading class-level data
         Console.WriteLine($"Total of books borrowed: {Member.TotalBooksBorrowed}");
         Console.WriteLine($"Number of Members: {Member.TotalMembers}");
-        
+
         // -- Adding spaces to make it simpler to read --
         Console.WriteLine("");
 
@@ -114,7 +114,7 @@
         Console.WriteLine($"Name: {m1.Name}, Age: {m1.Age}, Level: {m1.MembershipLevel}, {m1.GetBooksBorrowed()} ");
         Console.WriteLine($"Name: {m3.Name} , Age: {m3.Age}, Level: {m3.MembershipLevel},  {m3.GetBooksBorrowed()} ");
         Console.WriteLine($"Name: {m2.Name}, Age: {m2.Age}, Level: {m2.MembershipLevel},  {m2.GetBooksBorrowed()} ");
-        
+
         // TODO: Print TotalMembers and TotalBooksBorrowed
         // Instructions:
         // - Use static properties

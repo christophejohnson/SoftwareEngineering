@@ -1,4 +1,4 @@
-public class Member
+﻿public class Member
 {
     // ============================
     // 1. Public Auto-property for Name
@@ -23,12 +23,12 @@ public class Member
             // - Otherwise, store the provided value
             // - Demonstrates a full property with a backing field and setter logic
 
-            
+
             if (value <= 0)
             {
                 Console.WriteLine("Invalid Age");
                 value = 0;
-                
+
             }
             else
             {
@@ -40,7 +40,7 @@ public class Member
     // ============================
     // 3. Static auto-property for TotalMembers
     // TODO: Implement a public static auto-property to track total members
-    
+
     public static int TotalMembers { get; private set; }
 
 
@@ -78,8 +78,8 @@ public class Member
     // TODO: Implement a public property for MembershipLevel with a private setter
     // Instructions:
     public string MembershipLevel { get; private set; }
-    
-    
+
+
     // - This property should be readable publicly but only writable inside the class
     // - Demonstrates controlled access to a property
 
@@ -89,8 +89,8 @@ public class Member
     // TODO: Create a private field to track the number of books a member has borrowed
     // Instructions:
     private int booksBorrowed = 0;
-    
-    
+
+
     // - Demonstrates encapsulation of instance data
 
 
@@ -103,7 +103,7 @@ public class Member
     // - Define one field for VIP members with a limit of 10 books
     // - Use private and static so these values are shared across all members and cannot be changed from outside
     // - Demonstrates using class-level variables to enforce business rules
-    
+
     private static int maxBooksStand = 3;
     private static int maxBooksPremium = 5;
     private static int maxBooksVIP = 10;
@@ -126,15 +126,15 @@ public class Member
         Age = age;
         MembershipLevel = level;
         TotalMembers++;
-        
+
     }
-    
+
     // ============================
     // Private method to get max borrow limit for this member
     // TODO: Implement a private method to return the max number of books allowed
     private int GetMaxBorrowLimit()
     {
-        if (MembershipLevel == "Standard" )
+        if (MembershipLevel == "Standard")
         {
             return maxBooksStand;
         }
@@ -169,7 +169,7 @@ public class Member
         {
             Console.WriteLine($"{Name} has reached their borrowing limit.");
         }
-        
+
         // Instructions:
         // - Call the method that returns the max books allowed
         // - Compare the current booksBorrowed with the maximum
@@ -209,9 +209,9 @@ public class Member
     {
         // Instructions:
         // - Demonstrates encapsulation and controlled access to a private data attribute
-       
+
         return booksBorrowed; // placeholder
     }
-    
+
 
 }
